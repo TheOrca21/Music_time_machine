@@ -17,7 +17,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope='playlist-modify-private',
                                                client_secret=Spotify_secret,
                                                show_dialog=True,
                                                cache_path='token.txt',
-                                               username='sudhakar'))
+                                               username='name'))
 user_id = sp.current_user()['id']
 song_uris = []
 year = date.split('-')[0]
